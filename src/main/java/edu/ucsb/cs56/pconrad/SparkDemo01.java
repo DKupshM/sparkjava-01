@@ -21,10 +21,10 @@ public class SparkDemo01 {
 	      	
 		String html = "<h1><a href='/hello'>Hello</a> World!</h1>\n" +
     "<p>This web app is powered by \n" +
-    "<a href='https://github.com/DKupshM/sparkjava-01'>this github repo</a></p>\n";
+    "<a href='https://github.com/DKupshM/sparkjava-01'>this github repo</a></p> n";
 
 	      	spark.Spark.get("/", (req, res) -> html);
-		spark.Spark.get("/hello", (req, res) -> "<p><b>Hello, World!</b>  You just clicked the first link on my web app.</p>);
+		spark.Spark.get("/hello", (req, res) -> "<p><b>Hello, World!</b>  You just clicked the first link on my web app.</p>");
 		spark.Spark.get("/bye", (req, res) -> "Goodbye World");
 		spark.Spark.get("/yo", (req, res) -> "S'up World");
 		spark.Spark.get("/tension", (req, res) -> "Midterm next week.  No problem dude");		
